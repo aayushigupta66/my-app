@@ -38,7 +38,7 @@ export default function Home() {
          I design and develop seamless digital experiences for web and mobile.
         </p>
         <nav className="mt-8 hidden lg:block" aria-label="In-page jump links">
-          <ul className="space-y-4 text-sm font-semi text-gray-500 pt-10">
+          <ul className="space-y-4 text-sm font-bold text-gray-500 pt-10">
             {[
               { id: "about", label: "ABOUT" },
               { id: "experience", label: "EXPERIENCE" },
@@ -79,7 +79,7 @@ export default function Home() {
       </aside>
 
       {/* Right Scrollable Content - 50% Width */}
-      <main className="w-full lg:col-span-3 mx-auto px-6 py-24 space-y-24  lg:text-left gap-8">
+      <main className="w-full lg:col-span-3 mx-auto px-6 lg:py-24 py-12 space-y-24 lg:text-left gap-8">
       
       {/* Mobile Version of Aside Section */}
       <section className="block lg:hidden ">
