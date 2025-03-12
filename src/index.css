@@ -1,11 +1,80 @@
-:root {
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+html, body {
+  @apply bg-gray-900;
+}
+
+
+@font-face {
+  font-family: "TheSeasons";
+  src: local("TheSeasons"),
+   url("./fonts/Fontspring-DEMO-theseasons-bd.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+ }
+
+ @font-face {
+  font-family: "TheSeasons";
+  src: local("TheSeasons"),
+   url("./fonts/Fontspring-DEMO-theseasons-bdit.otf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+ }
+
+ @font-face {
+  font-family: "TheSeasons";
+  src: local("TheSeasons"),
+   url("./fonts/Fontspring-DEMO-theseasons-it.otf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+ }
+
+ @font-face {
+  font-family: "TheSeasons";
+  src: local("TheSeasons"),
+   url("./fonts/Fontspring-DEMO-theseasons-reg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+ }
+
+ @font-face {
+  font-family: "TheSeasons";
+  src: local("TheSeasons"),
+   url("./fonts/Fontspring-DEMO-theseasons-lt.otf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+ }
+
+ @font-face {
+  font-family: "TheSeasons";
+  src: local("TheSeasons"),
+   url("./fonts/Fontspring-DEMO-theseasons-ltit.otf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+ }
+
+
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #961529;
+  background-color: #FFF9ED;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,20 +84,13 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #961529;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #961529;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
 h1 {
   font-size: 3.2em;
@@ -47,7 +109,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #961529;
 }
 button:focus,
 button:focus-visible {
@@ -60,9 +122,18 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #961529;
   }
   button {
     background-color: #f9f9f9;
   }
+} */
+
+.seasonsFont {
+  font-family: "TheSeasons";
 }
+
+.montserratFont {
+  font-family: "Montserrat", sans-serif;
+}
+
